@@ -2,6 +2,8 @@ import tkinter
 from gradecalc import gradecalc
 
 def onClick():
+    global label
+    label.destroy()
     name = nBox.get()
     h = int(hBox.get())
     a = int(aBox.get())
@@ -29,6 +31,7 @@ labelOne = tkinter.Label(root, text = "Homework (/25): ")
 labelTwo = tkinter.Label(root, text = "Assessment (/50): ")
 labelThree = tkinter.Label(root, text = "Exam (/100): ")
 buttonOne = tkinter.Button(root, text = "Calculate", command = onClick)
+label = tkinter.Label(root, text = '', background='White', padx=1.5, pady=2, relief='ridge')
 
 nLabel.grid(row = 1, column = 0)
 labelOne.grid(row = 2, column = 0)
