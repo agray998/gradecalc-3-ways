@@ -7,7 +7,7 @@ def onClick():
     a = int(aBox.get())
     f = int(fBox.get())
     result = gradecalc(name, h, a, f)
-    label = tkinter.Label(root, text = result)
+    label = tkinter.Label(root, text = result, background='White', padx=1.5, pady=2, relief='ridge')
     label.grid(row = 5, column = 2)
     
 
