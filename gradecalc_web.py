@@ -1,6 +1,6 @@
 from flask import Flask, request, render_template
 from flask_wtf import FlaskForm
-from wtforms import StringField, IntegerField, SubmitField, SelectField
+from wtforms import StringField, IntegerField, SubmitField
 from gradecalc import gradecalc
 import os
 
