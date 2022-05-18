@@ -5,7 +5,7 @@ from gradecalc import gradecalc
 import os
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.getenv('secretkey')
+app.config['SECRET_KEY'] = os.getenv('secret_key')
 
 class studentInfo(FlaskForm):
     s_name = StringField('Name: ')
